@@ -239,7 +239,7 @@ class _BaseKFold(with_metaclass(ABCMeta, _PartitionIterator)):
     @abstractmethod
     def __init__(self, n, n_folds, shuffle, random_state):
         super(_BaseKFold, self).__init__(n)
-        print("edit!")
+        print("test")
         if abs(n_folds - int(n_folds)) >= np.finfo('f').eps:
             raise ValueError("n_folds must be an integer")
         self.n_folds = n_folds = int(n_folds)
